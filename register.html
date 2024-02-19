@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Register</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg border-bottom">
+			<div class="container-fluid px-4">
+				<a class="navbar-brand" href="./index.html">
+					<img src="./logo/logo.webp" class="header-logo" alt="Logo" />
+				</a>
+				<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="30" height="30" viewBox="0 0 25 25" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M4 6l16 0"></path>
+						<path d="M4 12l16 0"></path>
+						<path d="M4 18l16 0"></path>
+					</svg>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title fw-bold px-3" id="offcanvasNavbarLabel">
+							Menu
+						</h5>
+						<button type="button" class="btn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M18 6l-12 12"></path>
+								<path d="M6 6l12 12"></path>
+							</svg>
+						</button>
+					</div>
+					<div class="offcanvas-body px-5">
+						<ul class="navbar-nav desktop-menu me-auto mb-2 mb-lg-0">
+							<li class="nav-item fw-bold">
+								<a class="nav-link" aria-current="page" href="./index.html">
+									Home
+								</a>
+							</li>
+							<li class="nav-item fw-bold dropdown">
+								<a class="nav-link" data-bs-auto-close="outside" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="pe-3">Category</span>
+									<span class="position-absolute end-0">
+										<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="22" height="22" viewBox="0 0 22 30" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M6 9l6 6l6 -6"></path>
+										</svg>
+									</span>
+								</a>
+								<ul class="dropdown-menu main-menus">
+									<li class="dropend">
+										<a class="dropdown-item fw-bold" data-bs-toggle="dropdown" href="#">
+											Men
+											<span class="position-absolute end-0 pe-2">
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="22" height="22" viewBox="0 0 22 30" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M6 9l6 6l6 -6"></path>
+												</svg>
+											</span>
+										</a>
+										<ul class="dropdown-menu submenu">
+											<li>
+												<a href="./products.html" class="dropdown-item fw-bold">
+													Service Name 01
+												</a>
+											</li>
+											<li>
+												<a href="./products.html" class="dropdown-item fw-bold">
+													Service Name 02
+												</a>
+											</li>
+											<li>
+												<a href="./products.html" class="dropdown-item fw-bold">
+													Service Name 03
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropend">
+										<a class="dropdown-item fw-bold" data-bs-toggle="dropdown" href="#">
+											Women
+											<span class="position-absolute end-0 pe-2">
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="22" height="22" viewBox="0 0 22 30" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M6 9l6 6l6 -6"></path>
+												</svg>
+											</span>
+										</a>
+										<ul class="dropdown-menu submenu">
+											<li>
+												<a href="./products.html" class="dropdown-item fw-bold">
+													Service Name 01
+												</a>
+											</li>
+											<li>
+												<a href="./products.html" class="dropdown-item fw-bold">
+													Service Name 02
+												</a>
+											</li>
+											<li>
+												<a href="./products.html" class="dropdown-item fw-bold">
+													Service Name 03
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item fw-bold">
+								<a class="nav-link" href="./book-a-service.html">
+									Book A Service
+								</a>
+							</li>
+							<li class="nav-item fw-bold">
+								<a class="nav-link" href="./contact-us.html"> Contact Us </a>
+							</li>
+							<li class="nav-item fw-bold">
+								<a class="nav-link" href="#"> Youtube </a>
+							</li>
+						</ul>
+						<ul class="navbar-nav desktop-menu ms-auto mb-2 mb-lg-0">
+							<li class="nav-item fw-bold">
+								<a class="nav-link position-relative" data-bs-toggle="collapse" href="#collapseSearch">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+										<path d="M21 21l-6 -6"></path>
+									</svg>
+									<span class="d-lg-none d-print-block fw-bold ps-1">Search</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-square-rounded" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z"></path>
+										<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path>
+										<path d="M6 20.05v-.05a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.05"></path>
+									</svg>
+									<span class="d-lg-none d-print-block fw-bold ps-1">My Account</span>
+									<span class="position-absolute d-lg-none d-print-block end-0">
+										<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="22" height="22" viewBox="0 0 22 30" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M6 9l6 6l6 -6"></path>
+										</svg>
+									</span>
+								</a>
+								<ul class="dropdown-menu main-menus p-2 mb-3">
+									<li>
+										<a class="dropdown-item fw-bold" href="./my-account.html">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-edit" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+												<path d="M6 21v-2a4 4 0 0 1 4 -4h3.5"></path>
+												<path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z"></path>
+											</svg>
+											Profile
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item fw-bold" href="./order-history.html">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-list" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+												<path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+												<path d="M9 12l.01 0"></path>
+												<path d="M13 12l2 0"></path>
+												<path d="M9 16l.01 0"></path>
+												<path d="M13 16l2 0"></path>
+											</svg>
+											Order History
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item fw-bold" href="./booking-history.html">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18"></path>
+												<path d="M13 8l2 0"></path>
+												<path d="M13 12l2 0"></path>
+											</svg>
+											Booking History
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item fw-bold" href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+												<path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+												<path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+											</svg>
+											Logout
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item fw-bold">
+								<a href="#" class="nav-link position-relative pe-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWishlist">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+									</svg>
+									<span class="position-absolute top-0 start-10 translate-middle badge rounded-pill fs-7 bg-green mt-2 ms-1">
+										2
+									</span>
+									<span class="d-lg-none d-print-block fw-bold ps-4">Wishlist</span>
+								</a>
+							</li>
+							<li class="nav-item fw-bold">
+								<a href="#" class="nav-link position-relative pe-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddToCart">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+										<path d="M5.001 8h13.999a2 2 0 0 1 1.977 2.304l-1.255 7.152a3 3 0 0 1 -2.966 2.544h-9.512a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304z"></path>
+										<path d="M17 10l-2 -6"></path>
+										<path d="M7 10l2 -6"></path>
+									</svg>
+									<span class="position-absolute top-0 start-10 translate-middle badge rounded-pill fs-7 bg-green mt-2 ms-1">
+										5
+									</span>
+									<span class="d-lg-none d-print-block fw-bold ps-4">Add to Cart</span>
+								</a>
+							</li>
+							<li class="nav-item fw-bold">
+								<a href="#" class="nav-link">
+									<img src="./language/myanmar.webp" class="language-flag mb-1" alt="Myanmar" />
+									<span class="d-lg-none d-print-block fw-bold ps-2">Myanmar</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="collapse border-0" id="collapseSearch">
+				<div class="row">
+					<div class="col-xl-10 col-lg-12 col-md-12 p-2 mx-auto">
+						<div class="row">
+							<div class="col-xl-4 col-lg-4 col-md-4 py-2 mx-auto">
+								<select class="form-select form-control-green" id="inputGroupSelect01">
+									<option selected>Choose</option>
+									<option value="1">Service</option>
+									<option value="2">Product</option>
+								</select>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 py-2 mx-auto">
+								<select class="form-select form-control-green" id="inputGroupSelect01">
+									<option selected>-</option>
+									<option value="COVID-19 INACTIVATED VIRUS">
+										COVID-19 INACTIVATED VIRUS
+									</option>
+									<option value="VITAMIN B12">VITAMIN B12</option>
+									<option value="COVID-19 PROTEIN-BASED">
+										COVID-19 PROTEIN-BASED
+									</option>
+								</select>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 py-2 mx-auto">
+								<div class="input-group">
+									<input type="text" class="form-control form-control-green" placeholder="Search ..." />
+									<button type="button" class="btn btn-outline-green">
+										<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+											<path d="M21 21l-6 -6"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWishlist" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title px-3" id="offcanvasRightLabel">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+				</svg>
+				Wishlist
+			</h5>
+			<button type="button" class="btn border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M18 6l-12 12"></path>
+					<path d="M6 6l12 12"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="offcanvas-body">
+			<div class="col p-2">
+				<h5 class="text-center p-2 m-0">
+					Total - <span class="text-green fw-bold">2</span>
+				</h5>
+			</div>
+			<table class="table table-borderless m-0">
+				<tbody>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/01/01.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">COVID-19 INA...</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/02/02.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">VITAMIN B12</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="col text-center px-2 py-3">
+				<a href="./wishlist.html" type="button" class="btn btn-outline-green rounded-pill">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hearts" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M14.017 18l-2.017 2l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.153 5.784"></path>
+						<path d="M15.99 20l4.197 -4.223a2.81 2.81 0 0 0 0 -3.948a2.747 2.747 0 0 0 -3.91 -.007l-.28 .282l-.279 -.283a2.747 2.747 0 0 0 -3.91 -.007a2.81 2.81 0 0 0 -.007 3.948l4.182 4.238z"></path>
+					</svg>
+					View All
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasAddToCart" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title px-3" id="offcanvasRightLabel">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+					<path d="M5.001 8h13.999a2 2 0 0 1 1.977 2.304l-1.255 7.152a3 3 0 0 1 -2.966 2.544h-9.512a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304z"></path>
+					<path d="M17 10l-2 -6"></path>
+					<path d="M7 10l2 -6"></path>
+				</svg>
+				Add to Cart
+			</h5>
+			<button type="button" class="btn border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M18 6l-12 12"></path>
+					<path d="M6 6l12 12"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="offcanvas-body">
+			<div class="col p-2">
+				<h5 class="text-center p-2 m-0">
+					Total - <span class="text-green fw-bold">5</span>
+				</h5>
+			</div>
+			<table class="table table-borderless m-0">
+				<tbody>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/01/01.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">COVID-19 INA...</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/02/02.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">VITAMIN B12</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/03/03.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">COVID-19 PRO...</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/04/04.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">VITAMIN D3</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-center align-middle">
+							<img src="./product/05/05.webp" class="offcanvas-wishlist rounded" alt="product image" />
+						</td>
+						<td class="text-start align-middle">
+							<p class="lh-lg p-0 m-0">COVID-19 LAV</p>
+							<p class="lh-lg text-secondary p-0 m-0">103,000 Ks</p>
+						</td>
+						<td class="text-center align-middle">
+							<button type="button" class="btn btn-outline-green">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M4 7l16 0"></path>
+									<path d="M10 11l0 6"></path>
+									<path d="M14 11l0 6"></path>
+									<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+									<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+								</svg>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="col text-center px-2 py-3">
+				<a href="./add-to-cart.html" class="btn btn-outline-green rounded-pill">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-seam" width="25" height="25" viewBox="0 0 25 27" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5"></path>
+						<path d="M12 12l8 -4.5"></path>
+						<path d="M8.2 9.8l7.6 -4.6"></path>
+						<path d="M12 12v9"></path>
+						<path d="M12 12l-8 -4.5"></path>
+					</svg>
+					View Cart
+				</a>
+			</div>
+		</div>
+	</div>
+	<main>
+		<div class="spacer-main-top"></div>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-7 col-12 mx-auto">
+						<h5 class="text-center p-2 m-0">Create An Account</h5>
+						<p class="text-center text-secondary pb-2 m-0">
+							Welcome to Our Pharmacy
+						</p>
+						<form action="">
+							<div class="col p-2">
+								<input type="text" class="form-control form-control-green" placeholder="Name" />
+							</div>
+							<div class="col p-2">
+								<input type="email" class="form-control form-control-green" placeholder="Email" />
+							</div>
+							<div class="col p-2">
+								<input type="text" class="form-control form-control-green" placeholder="Phone" />
+							</div>
+							<div class="col p-2">
+								<input type="password" class="form-control form-control-green" placeholder="Password" />
+							</div>
+							<div class="col p-2">
+								<input type="password" class="form-control form-control-green" placeholder="Confirm Password" />
+							</div>
+							<div class="col text-center p-2">
+								<button type="submit" class="btn btn-green fw-bold rounded-pill">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-edit" width="22" height="22" viewBox="0 0 30 30" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+										<path d="M6 21v-2a4 4 0 0 1 4 -4h3.5"></path>
+										<path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z"></path>
+									</svg>
+									Create
+								</button>
+							</div>
+						</form>
+						<div class="col p-2">
+							<p class="text-center p-2 m-0">
+								Been here before?
+								<a href="./login.html" class="link-green fw-bold">Log In</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="spacer-main-bottom"></div>
+	</main>
+	<footer class="fixed-bottom border-top">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="col text-center p-2">
+					<p class="p-2 m-0">Lotaya Care &copy; 2023.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
